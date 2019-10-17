@@ -74,3 +74,59 @@ GPIO_Init(COM_TX_PORT, &GPIO_InitStructure);
 GPIO_SetBits(COM_TX_PORT, COM_TX_PIN);
 }
 
+
+# -*- coding: utf-8 -*-
+"""
+Spyder Editor
+
+This is a temporary script file.
+"""
+import matplotlib.pyplot as plt
+import numpy as np
+  
+from sklearn.naive_bayes import GaussianNB
+
+from sklearn.metrics import accuracy_score,classification_report  
+from sklearn.datasets import load_digits #
+from sklearn import svm
+from PIL import Image
+
+dig=load_digits(n_class=10) #读入数字图像库，10类数字
+
+plt.imshow(dig.data[:1].reshape(8,8),cmap ='gray')
+
+plt.show()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#y_pres=svm_model.predict(xtest)
+#fig,ax=plt.subplots(5,5,figsize=(10,10))
+#plt.figure(1)
+#for i,axi in enumerate(ax.flatten()):  #flatten把数组展平
+#    axi.imshow(dig.images[1501+i],cmap='binary')
+#    axi.set(xticks=[],yticks=[],title="{}::{}".format(ytest[i],y_pres[i]))
+
