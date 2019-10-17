@@ -1,5 +1,7 @@
 blog: https://blog.csdn.net/wxh0000mm/article/details/77863217
 
+https://blog.csdn.net/asialee_bird/article/details/81412903
+
 #define COM_TX_PORT GPIOA
 
 #define COM_TX_PIN GPIO_Pin_4
